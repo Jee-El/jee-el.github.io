@@ -8,16 +8,15 @@
     scroll-behavior: smooth;
 }
 
-html, body{
-    width:100%;
-    overflow-x:hidden;
+html {
+    height: 100vh;
 }
 
 .firstSection {
     background-color: #1A1A40;
     width: 100%;
-    min-height: 80vh;
-    padding: 2rem 4rem;
+    min-height: 100vh;
+    padding: 2rem 18vw 2rem;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -37,9 +36,13 @@ html, body{
     letter-spacing: 0.13rem;
 }
 
+.menu {
+    display: none;
+}
+
 .nav-list {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     gap: 3rem;
     font-size: 1rem;
     font-weight: 400;
@@ -59,10 +62,10 @@ html, body{
 .content {
     margin: auto 0;
     display: flex;
-    flex-flow: row wrap-reverse;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    row-gap: 3rem;
+    column-gap: 3rem;
 }
 
 .desc {
@@ -84,7 +87,7 @@ h1 {
     word-spacing: 0.05rem;
 }
 
-h3 {
+.info {
     font-style: normal;
     font-weight: normal;
     font-size: 1.1rem;
@@ -96,12 +99,11 @@ h3 {
 .hireme {
     width: 7.1rem;
     height: fit-content;
-    margin-top: 1rem;
     padding: .4rem .8rem;
     text-align: center;
     text-transform: capitalize;
     font-size: 1.11rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.05rem;
     background-color: #FA58B6;
     border:0;
@@ -113,6 +115,7 @@ h3 {
 }
 
 .helloImg {
+    max-width: 40%;
     width: 40%;
     height: auto;
 }
@@ -126,8 +129,7 @@ h3 {
 
 .icons a {
     color: #fff;
-    width: 2rem;
-    height: auto;
+    padding: .2rem;
     font-size: 1.1rem;
     transition: transform 0.3s easy-in-out;
 }
@@ -139,7 +141,7 @@ h3 {
 .secondSection {
     background-color: #fff;
     width: 100%;
-    padding: 6rem 4rem;
+    padding: 6rem 18vw 6rem;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -150,8 +152,8 @@ h3 {
     align-items: center;
 }
 
-.Skills h3 {
-    height: 1.15rem;
+.Skills h4 {
+    height: 1.8rem;
     width: 100%;
     margin-bottom: 7.5rem;
     font-weight: 500;
@@ -160,10 +162,10 @@ h3 {
     border-bottom: 1px solid #1A1A40;
 }
 
-.Skills h3 span {
+.Skills h4 span {
     background-color: #fff;
     padding: 0 10px;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
 }
 
 .webDev, .design {
@@ -171,18 +173,21 @@ h3 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    column-gap: 5vw;
     align-items: center;
+    column-gap: 8vw;
 }
 
 .webDevImg, .designImg {
-    max-width: 30rem;
-    width: 25rem;
+    max-width: 40%;
+    width: 40%;
     height: auto;
 }
 .webDevDesc, .designDesc {
-    max-width:30rem;
-    width: 25rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 40%;
+    width: 40%;
     height: auto;
     text-align: center;
 }
@@ -196,12 +201,12 @@ h3 {
     flex-direction: row-reverse;
 }
 
-h4 {
+h3 {
     font-style: normal;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 186.5%;
-    color: #313170;
+    color: #1A1A40;
     margin-bottom: 0.2rem;
 }
 
@@ -212,25 +217,117 @@ p {
     line-height: 186.5%;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .firstSection, .secondSection {
-        padding-left: 18vw;
-        padding-right: 18vw;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 
     .webDev, .design {
-        column-gap: 8vw;
+        column-gap: 5vw;
     }
 
     .helloImg {
-        width: 35%;
+        width: 40vmin;
+        max-width: 50vmin;
         height: auto;
+    }
+    .webDevImg, .designImg {
+        width: 42vmin;
+        max-width: 50vmin;
+        height: auto;
+    }
+    .webDevDesc, .designDesc {
+        min-width: 40vmin;
+        width: 50vmin;
+        max-width: 60vmin;
     }
 }
 
 @media (max-width:768px) {
+    .nav-list li {
+        display: none;
+    }
+
+    .logo_menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu {
+        display: flex;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .firstSection, .secondSection {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .helloImg {
+        min-width: 300px;
+        width: 55vmin;
+        max-width: 60vmin;
+    }
+
+    .desc {
+        min-width: 60vmin;
+        width: 70vmin;
+        max-width: 80vmin;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        row-gap: 4rem;
+    }
+
+    button, .icons {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .webDev, .design {
         flex-wrap: wrap;
-        row-gap: 4rem;
+        row-gap: 2.5vw;
+    }
+
+    .webDevImg, .designImg {
+        width: 40vmin;
+        max-width: 50vmin;
+        height: auto;
+    }
+
+    .webDevDesc, .designDesc {
+        min-width: 40vmin;
+        width: 50vmin;
+        max-width: 60vmin;
+    }
+}
+
+@media (max-width: 480px) {
+    .firstSection, .secondSection {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .webDev, .design {
+        flex-wrap: wrap;
+        row-gap: 2.5vw;
+    }
+
+    .webDevImg, .designImg {
+        width: 50vmin;
+        max-width: 50vmin;
+        height: auto;
+    }
+
+    .webDevDesc, .designDesc {
+        min-width: 40vmin;
+        width: 50vmin;
+        max-width: 60vmin;
     }
 }
