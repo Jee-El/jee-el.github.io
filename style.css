@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }
 
+html, body{
+    width:100%;
+    overflow-x:hidden;
+}
+
 .firstSection {
     background-color: #1A1A40;
     width: 100%;
