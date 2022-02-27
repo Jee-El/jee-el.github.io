@@ -8,13 +8,14 @@
     text-decoration: none;
     list-style: none;
     font-family: Poppins, helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
-section {
+.firstSection {
     background-color: #1A1A40;
-    min-height: fit-content;
-    min-width: fit-content;
-    padding: 2rem 20vw;
+    width: 100%;
+    min-height: 80vh;
+    padding: 2rem 4rem;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -31,7 +32,7 @@ section {
     font-weight: 800;
     font-size: 1.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.12rem;
+    letter-spacing: 0.13rem;
 }
 
 .nav-list {
@@ -40,26 +41,34 @@ section {
     gap: 3rem;
     font-size: 1rem;
     font-weight: 400;
-    letter-spacing: 0.04rem;
+    letter-spacing: 0.05rem;
 }
 
 .nav-list a {
     color: #fff;
     padding: 0.5rem;
+    transition: border-bottom 0.3s easy-in-out;
 }
+
+.nav-list a:hover {
+    border-bottom: 2.5px solid #FA58B6;
+}
+
 .content {
-    margin: 7rem 0 8rem;
+    margin: auto 0;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap-reverse;
     justify-content: space-between;
     align-items: center;
+    row-gap: 3rem;
 }
 
 .desc {
-    max-width: 50%;
+    width: 50%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: flex-start;
     row-gap: 1.5rem;
     color: #fff;
 }
@@ -101,10 +110,9 @@ h3 {
     color: #1A1A40;
 }
 
-img {
-    width: 350px;
+.helloImg {
+    width: 40%;
     height: auto;
-    flex: 0 5 auto;
 }
 
 .icons {
@@ -124,4 +132,103 @@ img {
 
 .icons a:hover {
     transform: scale(1.5);
+}
+
+.secondSection {
+    background-color: #fff;
+    width: 100%;
+    padding: 6rem 4rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.Skills {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.Skills h3 {
+    height: 1.15rem;
+    width: 100%;
+    margin-bottom: 7.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #1A1A40;
+    border-bottom: 1px solid #1A1A40;
+}
+
+.Skills h3 span {
+    background-color: #fff;
+    padding: 0 10px;
+    font-size: 2.3rem;
+}
+
+.webDev, .design {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    column-gap: 5vw;
+    align-items: center;
+}
+
+.webDevImg, .designImg {
+    max-width: 30rem;
+    width: 25rem;
+    height: auto;
+}
+.webDevDesc, .designDesc {
+    max-width:30rem;
+    width: 25rem;
+    height: auto;
+    text-align: center;
+}
+
+.webDev {
+    margin-bottom: 12rem;
+}
+
+.design {
+    margin-bottom: 6rem;
+    flex-direction: row-reverse;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 186.5%;
+    color: #313170;
+    margin-bottom: 0.2rem;
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.05rem;
+    line-height: 186.5%;
+}
+
+@media (min-width: 1200px) {
+    .firstSection, .secondSection {
+        padding-left: 18vw;
+        padding-right: 18vw;
+    }
+
+    .webDev, .design {
+        column-gap: 8vw;
+    }
+
+    .helloImg {
+        width: 35%;
+        height: auto;
+    }
+}
+
+@media (max-width:768px) {
+    .webDev, .design {
+        flex-wrap: wrap;
+        row-gap: 4rem;
+    }
 }
