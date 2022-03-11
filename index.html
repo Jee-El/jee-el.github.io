@@ -4,74 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontello.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Gen | Portfolio</title>
 </head>
 <body>
-
-<!--======================= HOME PAGE =======================-->
-
-    <section class="firstSection">
-        <nav class="navbar">
-            <div class="logo_menu">
-                <div class="logo">gennys</div>
-                <div class="menu"><i class="fa-solid fa-bars"></i></div>
-            </div>
-            <div class="nav-items">
-                <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </div>
+    <!-- ============================= HOME PAGE ============================= -->
+    
+    <section id="home-section">
+        <nav>
+            <div class="logo">gennys</div>
+            <div class="menu"><i class="icon-menu"></i></div>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
         </nav>
         <div class="content">
-            <div class="desc">
-                <h1>i'm<br>lhoussaine ghallou</h1>
-                <div class="info">A web designer & developer who fell in love with making creative websites with the latest and most modern technologies available in this field.</div>
-                <button type="button" class="hireme"><a href="#Contact">hire me</a></button>
+            <div class="info">
+                <h1 class="name">i'm<br>lhoussaine ghallou</h1>
+                <p class="aboutMe">A web designer & developer who fell in love with making creative websites with the latest and most modern technologies available in this field.</p>
+                <button type="button" class="hireMe">hire me</button>
                 <div class="icons">
-                <a href="https://github.com/GennySS" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.behance.net/GennySS" target="_blank"><i class="fa-brands fa-behance"></i></a>
-                <a href="https://dribbble.com/GennySS" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
-                </div>
+                    <a href="https://github.com/GennySS" target="_blank"><i class="icon-github"></i></a>
+                    <a href="https://dribbble.com/GennySS" target="_blank"><i class="icon-dribbble"></i></a>
+                    <a href="https://www.behance.net/GennySS" target="_blank"><i class="icon-behance"></i></a> 
+                </div> 
             </div>
-            
-            <img class="helloImg" src="https://svgshare.com/i/ejN.svg" alt="man waving hello">
-        </div>
+            <img class="welcome" src="./assets/welcome.svg" alt="a man waving at you">
+        </div>        
     </section>
 
-<!--======================= SKILLS PAGE =======================-->
-    
-    <section id="Skills" class="secondSection">
-        <div class="Skills">
-            <h4><span>Skills</span></h4>
-            <div class="webDev">
-                <img class="webDevImg" src="https://svgshare.com/i/eib.svg" alt="coder next to her desktop PC">
-                <div class="webDevDesc">
-                    <h3>Web Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and
+    <!-- ============================= SERVICES PAGE ============================= -->
+
+    <section id="services-section">
+        <h1 class="section-name">Services</h1>
+        <div class="services">
+            <div class="service webDev">
+                <img src="./assets/coder.svg" alt="coder next to her PC">
+                <div class="service-info">
+                    <h2>Web Development</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
                 </div>
             </div>
-            <div class="design">
-                <img class="designImg" src="https://svgshare.com/i/egK.svg" alt="little cute monsters designing an interface">
-                <div class="designDesc">
-                    <h3>UI/UX Design</h3>
-                    <p>There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in
-                    some form, by injected humour, or randomised words
-                    which don't look even slightly believable.
-                    </p>   
+            <div class="service webDesign">
+                <img src="./assets/UXDesign.svg" alt="cute monsters making UX design">
+                <div class="service-info">
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour, or randomised words
+                        which don't look even slightly believable.
+                    </p>
                 </div>
-            </div>
+            </div>  
         </div>
     </section>
+
 </body>
 </html>
