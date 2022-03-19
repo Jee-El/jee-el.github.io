@@ -129,16 +129,16 @@ nav {
 
 #services-section {
     background-color: #fff;
-    min-height: unset;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    min-height: 100vh;
+    padding-top: 0;
 }
 
 .services {
     display: flex;
+    flex-grow: 1;
     flex-flow: column nowrap;
     justify-content: center;
-    margin: 4rem 0;
+    margin-bottom: 3rem;
     gap: 10rem 0;
 }
 
@@ -150,6 +150,10 @@ nav {
     letter-spacing: 0.08rem;
     text-align: center;
     text-transform: uppercase;
+}
+
+.section-name {
+    padding: 3rem 0;
 }
 
 .service {
@@ -169,17 +173,20 @@ nav {
 }
 
 .service img {
+    flex: 1 1 0;
     min-width: 250px;
     max-width: 40%;
     height: auto;
 }
 
 .service-info {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    flex: 1 1 0;
+    flex-flow: column nowrap;
     gap: 0.7rem 0;
+    justify-content: center;
+    min-width: 250px;
     width: 90%;
 }
 
@@ -210,7 +217,7 @@ nav {
     }
     
     .service-info {
-        max-width: 35vmax;
+        max-width: 40%;
     }
 }
 
@@ -265,8 +272,8 @@ nav {
 @media (min-width: 1201px) {
     #home-section, #services-section {
         min-height: 100vh;
-        padding-left: 20vw;
-        padding-right: 20vw;
+        padding-left: 18vw;
+        padding-right: 18vw;
     }
     
     .welcome {
@@ -277,10 +284,11 @@ nav {
         gap: 0 12vw;
     }
 
-    .service img {
+    .service img, .service-info {
         max-width: 35%;
     }
-    .service-info {
-        max-width: 25vmax;
+
+    * {
+        font-size: 1.1rem;
     }
 }
