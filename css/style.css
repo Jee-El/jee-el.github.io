@@ -114,10 +114,10 @@ nav {
 
 .icons {
     align-items: flex-start;
-    column-gap: 0.75rem;
+    column-gap: 1.2rem;
     display: flex;
     flex-flow: row nowrap;
-    font-size: 1.05rem;
+    font-size: 1.12rem;
     justify-content: flex-start;
 }
 
@@ -244,6 +244,32 @@ nav {
     align-self: flex-end;
     color: #FA58B6;
     mix-blend-mode: color-dodge;
+}
+
+/* FOOTER STYLE */
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b2b6e70;
+    height: 50px;
+    width: 100%;
+}
+
+footer h4 {
+    color: #F5f5f5;
+    font-weight: 300;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+}
+
+footer h4 .icon-heart {
+    font-size: 0.75rem;
+    color: #FA58B6;
+    mix-blend-mode: color-dodge;
+    margin-left: 0.1rem;
 }
 
 @media (min-width: 769px) {
