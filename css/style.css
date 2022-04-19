@@ -47,10 +47,6 @@ nav {
     width: 95%;
 }
 
-.nav-links-desktop {
-    display: none;
-}
-
 header {
     width: 100%;
     display: flex;
@@ -67,7 +63,7 @@ header {
     text-transform: capitalize;
 }
 
-.nav-links-mobile {
+.nav-links {
     background-color: rgb(33, 33, 82);
     position: absolute;
     top: 0;
@@ -81,11 +77,11 @@ header {
     height: 100vh;
 }
 
-.nav-links-mobile.active {
+.nav-links.active {
     display: flex;
 }
 
-.nav-links-mobile > li > a {
+.nav-links > li > a {
     color: #f5f5f5;
     font-size: 0.85rem;
     font-weight: 400;
@@ -93,7 +89,7 @@ header {
     padding: 0.5rem 0.25rem;
 }
 
-.nav-links-mobile > *:not(:last-child) {
+.nav-links > *:not(:last-child) {
     margin-bottom: 2.5rem;
 }
 
@@ -355,18 +351,15 @@ footer > h4 > .icon-heart, .icon-twitter {
         display: none;
     }
 
-    .nav-links-mobile.active {
-        display: none;
-    }
-
-    .nav-links-desktop {
+    .nav-links {
+        all: unset;
         align-items: center;
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
     }
 
-    .nav-links-desktop > li > a {
+    .nav-links > li > a {
         color: #f5f5f5;
         font-size: 0.85rem;
         font-weight: 400;
@@ -375,11 +368,12 @@ footer > h4 > .icon-heart, .icon-twitter {
         transition: border-bottom 0.4ms ease-in-out;
     }
 
-    .nav-links-desktop > li:not(:first-child) {
+    .nav-links > li:not(:first-child) {
+        all: unset;
         margin-left: 2.5rem;
     }
 
-    .nav-links-desktop > li > a:hover {
+    .nav-links > li > a:hover {
         border-bottom: 2px solid #FA58B6;
     }
 

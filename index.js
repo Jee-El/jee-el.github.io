@@ -1,6 +1,6 @@
-const navLinksMobile = document.querySelector('.nav-links-mobile');
+const navLinksMobile = document.querySelector('.nav-links');
 const btnCancel = document.querySelector('.icon-cancel');
-const navList = document.querySelectorAll('.nav-links-mobile > *');
+const navList = document.querySelectorAll('.nav-links > *');
 const toggleBtn = document.querySelector('.icon-menu');
 toggleBtn.addEventListener('click', (e) => {
     btnCancel.classList.add('active');
