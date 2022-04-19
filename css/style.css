@@ -52,11 +52,6 @@ nav {
 }
 
 header {
-    /*
-    border-bottom: 2px solid rgb(33, 33, 82);
-    top: 2.5rem;
-    position: fixed;
-    */
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -349,6 +344,18 @@ footer > h4 > .icon-heart, .icon-twitter {
 
 @media (min-width: 769px) {
     .icon-menu {
+        display: none;
+    }
+
+    .icon-cancel {
+        display: none;
+    }
+    
+    .icon-cancel.active {
+        display: none;
+    }
+
+    .nav-links-mobile.active {
         display: none;
     }
 
