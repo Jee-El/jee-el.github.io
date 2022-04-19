@@ -35,7 +35,7 @@ body {
 }
 
 /* HOME SECTION STYLE */
-header {
+nav {
     align-items: center;
     background-color: #1A1A40;
     color: #f5f5f5;
@@ -47,8 +47,21 @@ header {
     width: 95%;
 }
 
-.navbar {
+.nav-links-desktop {
     display: none;
+}
+
+header {
+    /*
+    border-bottom: 2px solid rgb(33, 33, 82);
+    top: 2.5rem;
+    position: fixed;
+    */
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo, .name {
@@ -59,9 +72,47 @@ header {
     text-transform: capitalize;
 }
 
-.menu {
+.nav-links-mobile {
+    background-color: rgb(33, 33, 82);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    padding: 2.5rem 2rem;
+    height: 100vh;
+}
+
+.nav-links-mobile.active {
+    display: flex;
+}
+
+.nav-links-mobile > li > a {
+    color: #f5f5f5;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.08rem;
+    padding: 0.5rem 0.25rem;
+}
+
+.nav-links-mobile > *:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+.icon-menu, .icon-cancel {
     font-size: 1.05rem;
-    padding-left: 1rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.icon-cancel {
+    display: none;
+}
+
+.icon-cancel.active {
+    display: flex;
 }
 
 .content {
@@ -297,18 +348,18 @@ footer > h4 > .icon-heart, .icon-twitter {
 }
 
 @media (min-width: 769px) {
-    .menu {
+    .icon-menu {
         display: none;
     }
 
-    .navbar {
+    .nav-links-desktop {
         align-items: center;
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
     }
 
-    .navbar > li > a {
+    .nav-links-desktop > li > a {
         color: #f5f5f5;
         font-size: 0.85rem;
         font-weight: 400;
@@ -317,11 +368,11 @@ footer > h4 > .icon-heart, .icon-twitter {
         transition: border-bottom 0.4ms ease-in-out;
     }
 
-    .navbar > li:not(:first-child) {
+    .nav-links-desktop > li:not(:first-child) {
         margin-left: 2.5rem;
     }
 
-    .navbar > li > a:hover {
+    .nav-links-desktop > li > a:hover {
         border-bottom: 2px solid #FA58B6;
     }
 
