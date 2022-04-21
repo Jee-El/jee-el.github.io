@@ -1,16 +1,22 @@
 * {
     box-sizing: border-box;
-    font-family: Poppins, helvetica, sans-serif;
-    list-style: none;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    text-decoration: none;
 }
 
 body {
     background-color: #1A1A40;
+    font-family: Poppins, helvetica, sans-serif;
     position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 /* ALL SECTIONS STYLE */
@@ -48,11 +54,11 @@ nav {
 }
 
 header {
-    width: 100%;
+    align-items: center;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
 }
 
 .logo, .name {
@@ -64,17 +70,17 @@ header {
 }
 
 .nav-links {
+    align-items: flex-start;
     background-color: rgb(33, 33, 82);
-    position: absolute;
-    top: 0;
-    right: 0;
     display: none;
     flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 50%;
-    padding: 2.5rem 2rem;
     height: 100vh;
+    justify-content: flex-start;
+    padding: 2.5rem 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
 }
 
 .nav-links.active {
