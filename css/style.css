@@ -147,7 +147,7 @@ header {
 .hire-me {
     background-color: #FA58B6;
     border-radius: 0.2rem;
-    box-shadow: 0px 5px 10px rgba(108, 99, 255, 0.8);
+    box-shadow: 0px 5px 5px #6c63ff;
     color: rgb(33, 33, 82);
     font-size: 0.8rem;
     font-weight: 600;
@@ -160,7 +160,7 @@ header {
 }
 
 .hire-me:hover {
-    box-shadow: 0px 0px 12px 1.5px rgba(108, 99, 255, 0.8);
+    box-shadow: 0px 0px 10px 2px #6c63ff;
 }
 
 .icons {
@@ -188,7 +188,7 @@ header {
 
 /* SERVICES SECTION STYLE */
 .all-services {
-    align-items: flex-start;
+    align-items: flex-end;
     display: flex;
     flex-flow: row wrap;
     gap: 6rem 6rem;
@@ -227,9 +227,9 @@ header {
 }
 
 .service-description {
-    color: rgba(245, 245, 245, 0.9);
+    color: rgba(245, 245, 245, 0.85);
     font-size: 0.8rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.08rem;
     line-height: 1.4rem;
     padding: 0 2rem;
@@ -408,13 +408,12 @@ footer > h4 > .icon-heart, .icon-twitter {
     }
 
     .all-services {
-        align-items: flex-end;
         flex-wrap: nowrap;
         padding-bottom: 10rem;
         padding-top: 10rem;
     }
     .service-picture {
-        max-width: 85px;
+        max-width: 80px;
     }
 
     .projects {
