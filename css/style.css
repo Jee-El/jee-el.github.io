@@ -262,10 +262,13 @@ header {
     border-radius: 10px;
     display: flex;
     flex-flow: column nowrap;
-    gap: 0.8rem;
     justify-content: center;
     max-width: 330px;
     padding: 2rem;
+}
+
+.project > *:not(:last-child) {
+    margin-bottom: 0.8rem;
 }
 
 .project-name {
@@ -290,23 +293,26 @@ header {
     line-height: 1.4rem;
 }
 
-.project-links {
-    align-items: center;
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 0 1rem;
-}
-
 .project-links > a {
-    color: rgb(33, 33, 82);
+    color: rgb(26, 26, 64);
     background: #FA58B6;
     border-radius: 0.2rem;
+    box-shadow: 0px 0px 7px rgba(108, 99, 255, 0.8);
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
     padding: 0.3rem 0.6rem;
     text-align: center;
+    transition: box-shadow 0.4ms ease-in-out;
     width: fit-content; 
+}
+
+.project-links > a:hover {
+    box-shadow: 0px 0px 10px 1.2px rgba(108, 99, 255, 0.9);
+}
+
+.project-links > a:first-child {
+    margin-right: 1rem;
 }
 
 /* FOOTER STYLE */
