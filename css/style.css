@@ -147,7 +147,7 @@ header {
 .hire-me {
     background-color: #FA58B6;
     border-radius: 0.2rem;
-    box-shadow: 0px 5px 5px #6c63ff;
+    box-shadow: 0px 3px 5px #6c63ff;
     color: rgb(33, 33, 82);
     font-size: 0.8rem;
     font-weight: 600;
@@ -155,12 +155,12 @@ header {
     padding: 0.4rem 0.8rem;
     text-align: center;
     text-transform: uppercase;
-    transition: box-shadow 250ms ease-in-out;
+    transition: box-shadow 100ms ease-in-out;
     width: fit-content;   
 }
 
 .hire-me:hover {
-    box-shadow: 0px 0px 10px 2px #6c63ff;
+    box-shadow: 0px 0px 8px 2px #6c63ff;
 }
 
 .icons {
@@ -174,7 +174,7 @@ header {
 .icons > a {
     color: #f5f5f5;
     margin-right: 1rem;
-    transition: all 0.4ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .icons > a:hover {
@@ -294,10 +294,9 @@ header {
 }
 
 .project-links > a {
-    color: rgb(26, 26, 64);
-    background: #FA58B6;
+    color: #FA58B6;
+    border: 2px solid rgba(108, 99, 255, 0.5);
     border-radius: 0.2rem;
-    box-shadow: 0px 0px 7px rgba(108, 99, 255, 0.8);
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
@@ -308,7 +307,7 @@ header {
 }
 
 .project-links > a:hover {
-    box-shadow: 0px 0px 10px 1.2px rgba(108, 99, 255, 0.9);
+    box-shadow: 0px 0px 6px rgba(108, 99, 255, 1);
 }
 
 .project-links > a:first-child {
@@ -318,8 +317,8 @@ header {
 /* FOOTER STYLE */
 footer {
     align-items: center;
-    background: rgb(33, 33, 82);
     bottom: 0;
+    box-shadow: 0px -0.5px 3px #6c63ff;
     display: flex;
     height: 50px;
     justify-content: center;
