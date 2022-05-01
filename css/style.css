@@ -323,13 +323,16 @@ header {
 }
 
 form {
+    padding: 2rem 2rem;
+    box-shadow: 0px 0px 10px rgba(108, 99, 255, 0.3);
+    border-radius: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
     margin: 4rem 0 2.5rem;
     max-width: 480px;
-    width: 94%;
+    width: 100%;
 }
 
 label {
@@ -347,21 +350,16 @@ label[for="name"] {
 }
 
 input, textarea {
-    background-color: rgba(33, 33, 82, 0.4);
-    border: 1px solid rgba(250, 88, 182, 0.8);
+    background-color: rgb(33, 33, 82);
+    border: 1px solid rgba(108, 99, 255, 0.6);
     border-radius: 4px;
     color: #f5f5f5;
     font-family: Poppins, helvetica, sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     letter-spacing: 0.06rem;
     outline: none;
     padding: 0.7rem 0.9rem;
     width: 100%;
-}
-
-input[value="Submit"] {
-    cursor: pointer;
-    margin-top: 2rem;
 }
 
 textarea {
@@ -369,11 +367,24 @@ textarea {
 }
 
 input:focus, textarea:focus {
-    border: 1px solid rgba(108, 99, 255, 0.8);
+    border: 1px solid rgba(250, 88, 182, 0.6);
 }
 
 ::placeholder {
-    color: rgba(245, 245, 245, 0.4);
+    color: rgba(245, 245, 245, 0.5);
+}
+
+input[value="Submit"] {
+    color: #FA58B6;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    margin-top: 2rem;
+}
+
+input[value="Submit"]:hover {
+    background-color: #FA58B6;
+    color: #1A1A40;
 }
 
 /* FOOTER STYLE */
