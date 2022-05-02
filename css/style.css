@@ -457,7 +457,7 @@ footer {
 }
 
 @media (min-width: 1025px) {
-    #home-section, #services-section {
+    #home-section, #services-section, #projects-section {
         min-height: fit-content;
         padding-left: 10vw;
         padding-right: 10vw;
