@@ -240,16 +240,6 @@ header {
 }
 
 /* PROJECTS SECTION STYLE */
-.projects-section-note {
-    color: rgba(250, 88, 182, 0.6);
-    font-size: 0.8rem;
-    font-weight: 400;
-    letter-spacing: 0.15rem;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 0.8rem;
-}
-
 .projects {
     align-items: center;
     display: flex;
