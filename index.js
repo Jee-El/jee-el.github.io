@@ -12,14 +12,3 @@ navList.forEach((item) => item.addEventListener('click', () => {
     navLinksMobile.classList.remove('active');
 }))
 
-const inputs = document.querySelectorAll('input[type="text"]');
-const message = document.querySelector('textarea');
-const submitBtn = document.querySelector('input[type="submit"]');
-
-submitBtn.addEventListener('click', () => {
-    inputs.forEach((input) => {
-        input.value = '';
-    })
-    message.value = '';
-});
-
