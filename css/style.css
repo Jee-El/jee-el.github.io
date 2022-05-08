@@ -256,7 +256,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    max-width: 320px;
+    max-width: 335px;
     padding: 2rem;
 }
 
@@ -382,7 +382,7 @@ input:focus, textarea:focus {
 /* FOOTER STYLE */
 footer {
     align-items: center;
-    box-shadow: 0px -0.5px 3px #6c63ff;
+    box-shadow: 0px -0.5px 2px #6c63ff;
     color: #f5f5f5;
     display: flex;
     font-size: 0.7rem;
@@ -478,7 +478,7 @@ footer {
     }
 
     .projects {
-        max-width: calc(320*2px + 6rem);
+        max-width: calc(335*2px + 6rem);
     }
 }
 
