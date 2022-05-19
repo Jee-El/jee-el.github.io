@@ -1,7 +1,9 @@
 # My Portfolio
-Made this repository specifically for uploading my progress in making my own portfolio.
+Welcome to my portfolio's repository!
 
-# Link
+# Have a look at it here
 https://jee-el.github.io/
 
-Any feedback, design/code-wise, is appreciated :D
+# Home-page's UI
+![home-page's UI](./assets/homePageUI.jpg)
+Any feedback, design/code-wise, is **appreciated** :D
