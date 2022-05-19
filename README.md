@@ -5,5 +5,6 @@ Welcome to my portfolio's repository!
 https://jee-el.github.io/
 
 # Home-page's UI
-![home-page's UI](./assets/homePageUI.jpg)
+![home-page's UI](./assets/homePageUI.png)
+
 Any feedback, design/code-wise, is **appreciated** :D
