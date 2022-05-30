@@ -1,3 +1,4 @@
+// Hamburger menu stuff
 const navLinksMobile = document.querySelector('.nav-links');
 const btnCancel = document.querySelector('.icon-cancel');
 const navList = document.querySelectorAll('.nav-links > *');
