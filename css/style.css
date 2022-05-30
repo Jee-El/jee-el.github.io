@@ -28,7 +28,8 @@ ul {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
-	padding: 2.5rem 1.5rem;
+	margin: 3rem 0;
+	padding: 0 1.5rem;
 	width: 100%;
 }
 
@@ -40,6 +41,7 @@ ul {
 	letter-spacing: 0.08rem;
 	text-align: center;
 	text-transform: uppercase;
+	margin-bottom: 4rem;
 }
 
 /* HOME SECTION STYLE */
@@ -201,7 +203,7 @@ header {
 	flex-flow: row wrap;
 	gap: 6rem 6rem;
 	justify-content: center;
-	padding: 6rem 0 1rem;
+	padding: 0 0 1rem;
 }
 
 .service {
@@ -245,13 +247,14 @@ header {
 }
 
 /* PROJECTS SECTION STYLE */
+#projects-section {
+	margin-bottom: 0;
+}
 .projects {
 	align-items: center;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column nowrap;
 	justify-content: center;
-	gap: 4rem 4rem;
-	padding: 6rem 0rem 1rem;
 }
 
 .project {
@@ -261,6 +264,7 @@ header {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
+	margin-bottom: 4rem;
 	max-width: 325px;
 	padding: 1.8rem 2rem 1.925rem;
 }
@@ -312,9 +316,8 @@ header {
 
 /* CONTACT SECTION STYLE */
 #contact-section {
-	min-height: fit-content;
+	margin-top: 0;
 }
-
 form {
 	padding: 2rem 2rem;
 	box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.3);
@@ -323,7 +326,6 @@ form {
 	display: flex;
 	justify-content: center;
 	flex-flow: column nowrap;
-	margin: 4rem 0 2.5rem;
 	max-width: 460px;
 	width: 100%;
 }
@@ -345,7 +347,7 @@ label[for='name'] {
 input,
 textarea {
 	background-color: rgb(33, 33, 82);
-	border: 1px solid rgba(108, 99, 255, 0.6);
+	border: none;
 	border-radius: 3px;
 	color: #f5f5f5;
 	font-family: Poppins, helvetica, sans-serif;
@@ -362,7 +364,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-	border: 1px solid rgba(250, 88, 182, 0.6);
+	border: 1px solid rgba(250, 88, 182, 0.5);
 }
 
 ::placeholder {
@@ -410,6 +412,20 @@ footer {
 @media (min-width: 480px) {
 	.nav-links {
 		width: 40%;
+	}
+}
+
+@media (min-width: 762px) {
+	.projects {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		max-width: 714px;
+	}
+	.project:nth-child(1) {
+		margin-right: 4rem;
+	}
+	.project:nth-child(3) {
+		margin-right: 4rem;
 	}
 }
 
@@ -465,7 +481,6 @@ footer {
 
 @media (min-width: 1025px) {
 	#home-section,
-	#services-section,
 	#projects-section {
 		min-height: fit-content;
 		padding-left: 10vw;
@@ -480,14 +495,9 @@ footer {
 
 	.all-services {
 		flex-wrap: nowrap;
-		margin: auto;
 	}
 	.service-picture {
 		max-width: 80px;
-	}
-
-	.projects {
-		max-width: calc(335 * 2px + 6rem);
 	}
 }
 
@@ -495,10 +505,6 @@ footer {
 	#home-section {
 		padding-left: 18vw;
 		padding-right: 18vw;
-	}
-	#services-section {
-		padding-left: 8vw;
-		padding-right: 8vw;
 	}
 	.info {
 		font-size: 1.2rem;
