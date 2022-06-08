@@ -16,19 +16,19 @@ navList.forEach((item) =>
 
 // Form validation
 const formInputs = {
-	fullName: document.querySelector(`#name`),
+	name: document.querySelector(`#name`),
 	email: document.querySelector(`#email`),
 	message: document.querySelector(`#message`),
 };
 const regex = {
-	name: /^[a-z]+$/i,
+	name: /^([a-z]+)(\s[a-z]*){0,2}$/i,
 	email: /^([a-z\d\.-_]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/i,
 	message: /.+/i,
 };
 // Validate form while user is typing
 for (let input in formInputs) {
 	formInputs[input].addEventListener(`input`, (e) => {
-		if (regex[formInputs[input].id].test(e.target.value)) {
+		if (regex[input].test(e.target.value)) {
 			e.target.className = `valid`;
 			return;
 		}
@@ -39,7 +39,7 @@ for (let input in formInputs) {
 const form = document.querySelector(`form`);
 form.addEventListener(`submit`, (e) => {
 	for (let input in formInputs) {
-		if (!regex[formInputs[input].id].test(formInputs[input].value)) {
+		if (!regex[input].test(formInputs[input].value)) {
 			formInputs[input].className = `invalid`;
 			e.preventDefault();
 		}
