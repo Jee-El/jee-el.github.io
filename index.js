@@ -21,7 +21,7 @@ const formInputs = {
 	message: document.querySelector(`#message`),
 };
 const regex = {
-	name: /^([a-z]+)(\s[a-z]*){0,2}$/i,
+	name: /^(\b[a-z]+\b\s?){1,3}$/i,
 	email: /^([a-z\d\.-_]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/i,
 	message: /.+/i,
 };
