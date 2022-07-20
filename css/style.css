@@ -151,7 +151,7 @@ a {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	margin: 10rem auto;
+	margin: 10rem auto 5rem;
 	padding: 0 1.5rem;
 	width: 95%;
 }
@@ -478,6 +478,10 @@ footer {
 		scroll-margin-top: 2.8rem;
 	}
 
+	.content {
+		margin: 5rem auto;
+	}
+
 	.mobile-header {
 		display: none;
 	}
@@ -538,9 +542,7 @@ footer {
 		padding-left: 10vw;
 		padding-right: 10vw;
 	}
-	.content {
-		margin: 10rem auto 5rem;
-	}
+
 	.welcome {
 		max-width: 35vmax;
 	}
