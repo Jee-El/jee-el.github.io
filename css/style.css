@@ -7,8 +7,8 @@
 
 body {
 	background-color: #1a1a40;
-	height: 100%;
 	font-family: 'Poppins', helvetica, sans-serif;
+	height: 100%;
 	position: relative;
 }
 
@@ -45,9 +45,9 @@ a {
 	font-size: 1.4rem;
 	font-weight: 800;
 	letter-spacing: 0.08rem;
+	margin-bottom: 4rem;
 	text-align: center;
 	text-transform: uppercase;
-	margin-bottom: 4rem;
 }
 
 /* HOME SECTION STYLE */
@@ -78,15 +78,16 @@ a {
 }
 
 .mobile-header {
-	top: 0;
-	position: sticky;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
 	align-items: flex-start;
 	background-color: #1a1a40;
 	box-shadow: 0px 1px 3px #6c63ff;
-	padding: 1rem 1.5rem 0.5rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding: 0.8rem 1.5rem 0.5rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .mobile-nav.active {
@@ -94,20 +95,20 @@ a {
 }
 
 .mobile-nav {
+	align-items: center;
 	display: none;
 	flex-flow: column nowrap;
 	justify-content: center;
-	align-items: center;
 	width: 100%;
 }
 
 .mobile-nav-links {
-	width: 100%;
-	margin-top: 1rem;
+	align-items: flex-start;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	align-items: flex-start;
+	margin-top: 1rem;
+	width: 100%;
 }
 
 .mobile-nav-links > li {
@@ -116,11 +117,11 @@ a {
 }
 
 .mobile-nav-links > li > a {
-	display: inline-block;
-	width: 100%;
-	color: #f5f5f5;
 	border-bottom: 1px solid #fa58b6;
+	color: #f5f5f5;
+	display: inline-block;
 	padding: 0.3rem 0.4rem 0.3rem 0;
+	width: 100%;
 }
 
 .mobile-nav-links > li:first-child > a {
@@ -346,14 +347,14 @@ a {
 }
 
 form {
-	padding: 1.5rem;
+	align-items: center;
 	box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.3);
 	border-radius: 6px;
-	align-items: center;
 	display: flex;
 	justify-content: center;
 	flex-flow: column nowrap;
 	max-width: 460px;
+	padding: 1.5rem;
 	width: 100%;
 }
 
@@ -482,18 +483,18 @@ footer {
 	}
 
 	.desktop-header {
+		align-items: center;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
-		align-items: center;
-		width: 95%;
 		padding: 1.5rem;
+		width: 95%;
 	}
 
 	.desktop-nav-links {
+		align-items: center;
 		display: flex;
 		flex-flow: row nowrap;
-		align-items: center;
 		justify-content: center;
 	}
 
