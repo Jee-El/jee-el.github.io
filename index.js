@@ -1,18 +1,23 @@
-// Hamburger menu stuff
-const navLinksMobile = document.querySelector('.nav-links');
-const btnCancel = document.querySelector('.icon-cancel');
-const navList = document.querySelectorAll('.nav-links > *');
-const toggleBtn = document.querySelector('.icon-menu');
-toggleBtn.addEventListener('click', (e) => {
-	btnCancel.classList.add('active');
-	navLinksMobile.classList.add('active');
+// Hamburger menu
+const mobileNav = document.querySelector('.mobile-nav');
+const menuBtn = document.querySelector('.icon-menu');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-links > li');
+
+let menuClasses = ['icon-menu', 'icon-cancel'];
+let i = 0;
+menuBtn.addEventListener('click', () => {
+	mobileNav.classList.toggle('active');
+	menuBtn.className = menuClasses[1 - i];
+	i = 1 - i;
 });
-navList.forEach((item) =>
-	item.addEventListener('click', () => {
-		btnCancel.classList.remove('active');
-		navLinksMobile.classList.remove('active');
-	})
-);
+
+mobileNavLinks.forEach((navLink) => {
+	navLink.addEventListener('click', () => {
+		mobileNav.classList.remove('active');
+		menuBtn.className = menuClasses[0];
+		i = 0;
+	});
+});
 
 // Form validation
 const formInputs = {

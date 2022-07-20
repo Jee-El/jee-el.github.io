@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="description"
-			content="I'm Lhoussaine GHALLOU, aka Jee-El, a web designer and developer who fell in love with creating modern websites."
+			content="I'm Lhoussaine Ghallou, aka Jee-El, a web designer and developer who fell in love with creating modern websites."
 		/>
 		<meta name="theme-color" content="#6c63ff" />
 		<link rel="stylesheet" href="./css/style.css" />
@@ -21,22 +21,35 @@
 		<title>Jee-El | Portfolio</title>
 	</head>
 	<body>
-		<!-- =========== HOME PAGE =========== -->
-
-		<section id="home-section">
-			<nav>
-				<header>
-					<div class="logo">JeeEl</div>
-					<i class="icon-menu"></i>
-				</header>
-				<ul class="nav-links">
-					<i class="icon-cancel"></i>
+		<!-- =========== HAMBURGER MENU =========== -->
+		<header class="mobile-header">
+			<div class="logo-menu-icon">
+				<div class="logo">JeeEl</div>
+				<i class="icon-menu"></i>
+			</div>
+			<nav class="mobile-nav">
+				<ul class="mobile-nav-links">
 					<li><a href="#">Home</a></li>
 					<li><a href="#services-section">Services</a></li>
 					<li><a href="#projects-section">Projects</a></li>
 					<li><a href="#contact-section">Contact</a></li>
 				</ul>
 			</nav>
+		</header>
+		<!-- =========== HOME PAGE =========== -->
+
+		<section id="home-section">
+			<header class="desktop-header">
+				<div class="logo">JeeEl</div>
+				<nav>
+					<ul class="desktop-nav-links">
+						<li><a href="#">Home</a></li>
+						<li><a href="#services-section">Services</a></li>
+						<li><a href="#projects-section">Projects</a></li>
+						<li><a href="#contact-section">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
 			<div class="content">
 				<div class="info">
 					<h1 class="name">i'm<br />lhoussaine ghallou</h1>
@@ -45,20 +58,15 @@
 						fell in love with making creative and modern websites with the
 						latest technologies available in this field.
 					</p>
-					<a
-						href="https://www.linkedin.com/in/jee-el"
-						class="hire-me"
-						target="_blank"
+					<a href="https://www.linkedin.com/in/jee-el" class="hire-me"
 						>hire me</a
 					>
 					<div class="icons">
-						<a href="https://github.com/Jee-El" target="_blank"
-							><i class="icon-github"></i
-						></a>
-						<a href="https://dribbble.com/Jee-El" target="_blank"
+						<a href="https://github.com/Jee-El"><i class="icon-github"></i></a>
+						<a href="https://dribbble.com/Jee-El"
 							><i class="icon-dribbble"></i
 						></a>
-						<a href="https://www.behance.net/Jee-El" target="_blank"
+						<a href="https://www.behance.net/Jee-El"
 							><i class="icon-behance"></i
 						></a>
 					</div>
@@ -123,11 +131,31 @@
 			<h2 class="section-name">projects</h2>
 			<div class="projects">
 				<div class="project">
-					<h3 class="project-name">Etch-a-Sketch</h3>
-					<h4 class="project-techs">- Made with CSS & JS</h4>
+					<h3 class="project-name">Tic Tac Toe</h3>
+					<h4 class="project-techs">Ruby</h4>
 					<p class="project-description">
-						A simple game where you can draw pixel art, as well as test your
-						Kufic Calligraphy ideas.
+						Tic Tac Toe terminal game that features multiple modes, including
+						one to play against an AI.
+					</p>
+					<div class="project-links">
+						<a
+							class="demo"
+							href="https://replit.com/@Jee-El/Tic-Tac-Toe-terminal?v=1"
+							>DEMO</a
+						>
+						<a
+							class="code"
+							href="https://github.com/Jee-El/tic-tac-toe-terminal"
+							>CODE</a
+						>
+					</div>
+				</div>
+				<div class="project">
+					<h3 class="project-name">Etch-a-Sketch</h3>
+					<h4 class="project-techs">CSS JS</h4>
+					<p class="project-description">
+						Drawing game where you can draw pixel art & test your Kufic
+						Calligraphy ideas.
 					</p>
 					<div class="project-links">
 						<a class="demo" href="https://jee-el.github.io/etch-a-sketch/"
@@ -141,7 +169,7 @@
 
 				<div class="project">
 					<h3 class="project-name">Rock Paper Scissors</h3>
-					<h4 class="project-techs">- Made with CSS & JS</h4>
+					<h4 class="project-techs">CSS JS</h4>
 					<p class="project-description">
 						Play the oldest hand game in the world, Rock-Paper-Scissors, against
 						a computer and test your luck!
@@ -158,10 +186,10 @@
 
 				<div class="project">
 					<h3 class="project-name">Calculator</h3>
-					<h4 class="project-techs">- Made with HTML, CSS & JS</h4>
+					<h4 class="project-techs">HTML CSS JS</h4>
 					<p class="project-description">
-						A simple but functional calculator that gets basic operations done,
-						including square root.
+						Simple but functional & responsive calculator that gets basic
+						operations done.
 					</p>
 					<div class="project-links">
 						<a class="demo" href="https://jee-el.github.io/calculator/">DEMO</a>
@@ -171,10 +199,9 @@
 
 				<div class="project">
 					<h3 class="project-name">GCD & LCM Calculator</h3>
-					<h4 class="project-techs">- Made with HTML, CSS & JS</h4>
+					<h4 class="project-techs">HTML CSS JS</h4>
 					<p class="project-description">
-						A simple calculator of the Greatest Common Divisor & Lowest Common
-						Multiple.
+						Calculator of the Greatest Common Divisor & Lowest Common Multiple.
 					</p>
 					<div class="project-links">
 						<a class="demo" href="https://jee-el.github.io/GCD-LCM-Calculator/"
