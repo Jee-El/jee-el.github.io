@@ -291,15 +291,15 @@ a {
 	flex-flow: column nowrap;
 	justify-content: center;
 	margin-bottom: 4rem;
-	max-width: 320px;
+	max-width: 335px;
 	padding: 1.6rem;
 }
 
 .project-name {
 	color: #fa58b6;
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 	font-weight: 600;
-	letter-spacing: 0.08rem;
+	letter-spacing: 0.06rem;
 	margin-bottom: 0.25rem;
 }
 
@@ -461,7 +461,7 @@ footer {
 	.projects {
 		flex-flow: row wrap;
 		justify-content: space-between;
-		max-width: 714px;
+		max-width: 734px;
 	}
 	.project:nth-child(1) {
 		margin-right: 4rem;
