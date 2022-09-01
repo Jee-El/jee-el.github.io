@@ -275,7 +275,9 @@ a {
 /* PROJECTS SECTION STYLE */
 #projects-section {
 	margin-bottom: 0;
+	padding: 0 2rem;
 }
+
 .projects {
 	align-items: center;
 	display: flex;
@@ -290,7 +292,7 @@ a {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	max-width: 335px;
 	padding: 1.6rem;
 }
